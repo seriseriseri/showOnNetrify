@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/_koyamastyle.scss'; //カスタムテーマ
+// @import '@/assets/styles/_koyamastyle.scss'; //カスタムテーマ
 // .has-padding{
 //   padding: 10px;
 // }

@@ -66,7 +66,7 @@
                   >
               </b-navbar-item>
           </template>
-          <template slot="start" style="../assets/styles.koyamastyle.scss">
+          <template slot="start">
               <b-navbar-item>
                 <router-link :to="{path: '/'}" exact><a>TOP</a></router-link>
               </b-navbar-item>
