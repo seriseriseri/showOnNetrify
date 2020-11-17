@@ -42,8 +42,7 @@
 
 <style lang="scss" scoped>
  @import '@/assets/styles/_koyamastyle2.scss'; //カスタムテーマ
-
-
+ 
 // .has-padding{
 //     padding: 10px;
 // }
