@@ -126,6 +126,14 @@
             </b-navbar-item>
           </template>
         </b-navbar>
+        <div class="buttons">
+          <b-button type="is-primary">Primary</b-button>
+          <b-button type="is-success">Sucsess</b-button>
+          <b-button type="is-danger">Danger</b-button>
+          <b-button type="is-warning">Warning</b-button>
+          <b-button type="is-info">Info</b-button>
+          <b-button type="is-link">Link</b-button>
+        </div>
       </div>
     </header>
     <section>
@@ -164,6 +172,8 @@ export default {
   }
 }
 </script>
+
+
 
 <style lang="scss" scoped>
   .frame {

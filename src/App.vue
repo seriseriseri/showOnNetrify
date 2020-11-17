@@ -8,6 +8,9 @@
 </script>
 
 <style lang="scss">
+ @import '@/assets/styles/_koyamastyle.scss'; //カスタムテーマ
+
+
 html {
   height: 100%;
   background-color:seashell;
