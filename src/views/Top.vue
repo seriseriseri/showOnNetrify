@@ -16,7 +16,7 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth" @click="doNavigate('/news')">お知らせ</button> 
+            <button class="button is-fullwidth is-white" @click="doNavigate('/news')">お知らせ</button> 
           </footer>
         </div>
       </div>
@@ -34,8 +34,8 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth" @click="doNavigate('/reservation')">予約をする</button>
-            <button class="button is-fullwidth" @click="doNavigate('/')">空き状況を確認する</button>
+            <button class="button is-fullwidth is-white" @click="doNavigate('/reservation')">予約をする</button>
+            <button class="button is-fullwidth is-white" @click="doNavigate('/')">空き状況を確認する</button>
             <!-- <p class="card-footer-item">
               <span>
                 <a href="/Reservation">予約をする</a>
@@ -64,7 +64,7 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth" @click="doNavigate('/reservation2')">予約をする</button>
+            <button class="button is-fullwidth is-white" @click="doNavigate('/reservation2')">予約をする</button>
             <!-- <p class="card-footer-item">
               <span>
                 <a href="/reservation2">予約をする</a>
