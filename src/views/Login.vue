@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-mobile">
+  <div class="columns is-tablet">
     <div class="column is-three-fifths is-offset-one-fifth">
       <GoBackToPage/>
       <div class="root">

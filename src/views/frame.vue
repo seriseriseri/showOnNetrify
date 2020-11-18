@@ -57,7 +57,7 @@
         <h1 class="title is-3 has-text-centered">{{ $t("frame.title") }}</h1>
       </div> -->
       <div>
-        <b-navbar class="menuBar is-mobile-burger">
+        <b-navbar class="menuBar is-tablet-burger">
           <template slot="brand">
               <b-navbar-item tag="router-link" :to="{ path: '/' }">
                   <img
