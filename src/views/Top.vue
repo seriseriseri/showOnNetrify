@@ -16,11 +16,7 @@
             </div>
           </div>
           <footer class="card-footer">
-            <p class="card-footer-item">
-              <span>
-                <a href="/news">確認する</a>
-              </span>
-            </p>
+            <button class="button is-fullwidth" @click="doNavigate('/news')">お知らせ</button> 
           </footer>
         </div>
       </div>
@@ -38,7 +34,9 @@
             </div>
           </div>
           <footer class="card-footer">
-            <p class="card-footer-item">
+            <button class="button is-fullwidth" @click="doNavigate('/reservation')">予約をする</button>
+            <button class="button is-fullwidth" @click="doNavigate('/')">空き状況を確認する</button>
+            <!-- <p class="card-footer-item">
               <span>
                 <a href="/Reservation">予約をする</a>
               </span>
@@ -47,7 +45,7 @@
               <span>
                 <a id="font-small" href="#">空き状況を確認する</a>
               </span>
-            </p>
+            </p> -->
           </footer>
         </div>
       </div>
@@ -66,11 +64,12 @@
             </div>
           </div>
           <footer class="card-footer">
-            <p class="card-footer-item">
+            <button class="button is-fullwidth" @click="doNavigate('/reservation2')">予約をする</button>
+            <!-- <p class="card-footer-item">
               <span>
                 <a href="/reservation2">予約をする</a>
               </span>
-            </p>
+            </p> -->
           </footer>
         </div>
       </div>
@@ -81,8 +80,12 @@
 <script>
 // @ is an alias to /src
 
-
 export default {
+  methods: {
+    doNavigate: function (url) {
+      this.$router.push(url);
+    }
+  }
 }
 </script>
 
