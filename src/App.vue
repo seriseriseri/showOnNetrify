@@ -8,12 +8,13 @@
 </script>
 
 <style lang="scss">
-//  @import './assets/styles/_koyamastyle.scss'; //カスタムテーマ
+ @import './assets/styles/_koyamastyle.scss'; //カスタムテーマ
 
 
 html {
   height: 100%;
-  background-color:seashell;
+  // background-color:seashell;
+  background-color:rgb(250, 236, 239);
 }
 
 body {

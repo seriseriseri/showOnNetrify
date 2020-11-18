@@ -68,16 +68,16 @@
           </template>
           <template slot="start">
               <b-navbar-item>
-                <router-link :to="{path: '/'}" exact><a>TOP</a></router-link>
+                <router-link :to="{path: '/'}" exact><a><strong>TOP</strong></a></router-link>
               </b-navbar-item>
               <b-navbar-item>
-                <router-link :to="{path: '/news'}" exact><a>お知らせ</a></router-link>
+                <router-link :to="{path: '/news'}" exact><a><strong>お知らせ</strong></a></router-link>
               </b-navbar-item>
               <b-navbar-item href="#">
-                <router-link :to="{path: '/reservation'}" exact><a>けんしん</a></router-link>
+                <router-link :to="{path: '/reservation'}" exact><a><strong>けんしん</strong></a></router-link>
               </b-navbar-item>
               <b-navbar-item href="#">
-                <router-link :to="{path: '/reservation2'}" exact><a>健康希望調査</a></router-link>
+                <router-link :to="{path: '/reservation2'}" exact><a><strong>健康希望調査</strong></a></router-link>
               </b-navbar-item>
               <b-navbar-dropdown class="is-hoverable" label="その他">
                   <b-navbar-item href="#">
@@ -214,7 +214,9 @@ export default {
   //   text-align: center;
   // }
   .footer-color{
-    background-color: seashell;
+    // background-color: seashell;
+    // background-color: rgb(252, 239, 249);
+    background-color: rgb(250, 236, 239);
   }
   .footer-border{
     border-top:slateblue 1px solid;
@@ -250,6 +252,8 @@ export default {
   }
 
   .menuBar{
-    background-color: seashell;
+    // background-color: seashell;
+    background-color: rgb(250, 236, 239);
+    
   }
 </style>
