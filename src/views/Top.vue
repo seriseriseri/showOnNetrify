@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="block"></div>
-    <div class="columns is-centered is-desktop">
+    <div class="columns is-centered is-tablet">
       <div class="column is-3" id="column1">
         <div class="card has-text-centered size">
           <div class="card-content">
