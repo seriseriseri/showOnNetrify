@@ -8,7 +8,7 @@
 </script>
 
 <style lang="scss">
- @import './assets/styles/_koyamastyle.scss'; //カスタムテーマ
+ @import './assets/styles/appcustom'; //カスタムテーマ
 
 
 html {
