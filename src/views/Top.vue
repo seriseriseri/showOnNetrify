@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <div class="block"></div>
-    <div class="columns is-centered is-tablet">
+    <div class="columns  is-multiline">
       <div class="column is-3" id="column1">
-        <div class="card has-text-centered size">
+        <div class="card has-text-centered bm--card-equal-height">
           <div class="card-content">
             <div class="card-title block">
               <h1 class="title is-4">お知らせ</h1>
@@ -16,12 +16,12 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth is-white" @click="doNavigate('/news')">お知らせ</button> 
+            <a href="/News" class="card-footer-item">お知らせ</a>
           </footer>
         </div>
       </div>
       <div class="column is-3" id="column2">
-        <div class="card has-text-centered">
+        <div class="card has-text-centered bm--card-equal-height">
           <div class="card-content">
             <div class="card-title block">
               <h1 class="title is-4">けんしん</h1>
@@ -34,8 +34,8 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth is-white" @click="doNavigate('/reservation')">予約をする</button>
-            <button class="button is-fullwidth is-white" @click="doNavigate('/')">空き状況を確認する</button>
+            <a href="/Reservation" class="card-footer-item">予約をする</a>
+            <a href="#" class="card-footer-item">空き状況を確認する</a>
             <!-- <p class="card-footer-item">
               <span>
                 <a href="/Reservation">予約をする</a>
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="column is-3" id="column3">
-        <div class="card has-text-centered">
+        <div class="card has-text-centered bm--card-equal-height">
           <div class="card-content">
             <div class="card-title block">
               <h1 class="title is-4">健康希望調査</h1>
@@ -64,12 +64,66 @@
             </div>
           </div>
           <footer class="card-footer">
-            <button class="button is-fullwidth is-white" @click="doNavigate('/reservation2')">予約をする</button>
+            <a href="/Reservation2" class="card-footer-item">予約をする</a>
             <!-- <p class="card-footer-item">
               <span>
                 <a href="/reservation2">予約をする</a>
               </span>
             </p> -->
+          </footer>
+        </div>
+      </div>
+      <div class="column is-3" id="column3">
+        <div class="card has-text-centered bm--card-equal-height">
+          <div class="card-content">
+            <div class="card-title block">
+              <h1 class="title is-4">予防接種</h1>
+            </div>
+            <div class="card-icon has-text-primary block">
+              <b-icon pack="fas" icon="syringe" size="fa-3x"></b-icon>
+            </div>
+            <div class="card-text block">
+              <p>予防接種の予約をします。</p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">予約をする</a>
+          </footer>
+        </div>
+      </div>
+      <div class="column is-3" id="column3">
+        <div class="card has-text-centered bm--card-equal-height">
+          <div class="card-content">
+            <div class="card-title block">
+              <h1 class="title is-4">サンプル</h1>
+            </div>
+            <div class="card-icon has-text-primary block">
+              <b-icon pack="fas" icon="comment" size="fa-3x"></b-icon>
+            </div>
+            <div class="card-text block">
+              <p>サンプルカードです。</p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">予約をする</a>
+          </footer>
+        </div>
+      </div>
+      <div class="column is-3" id="column3">
+        <div class="card has-text-centered bm--card-equal-height">
+          <div class="card-content">
+            <div class="card-title block">
+              <h1 class="title is-4">サンプル２</h1>
+            </div>
+            <div class="card-icon has-text-primary block">
+              <b-icon pack="fas" icon="comment" size="fa-3x"></b-icon>
+            </div>
+            <div class="card-text block">
+              <p>サンプルカードです。</p>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item">予約をする</a>
           </footer>
         </div>
       </div>
@@ -81,17 +135,20 @@
 // @ is an alias to /src
 
 export default {
-  methods: {
-    doNavigate: function (url) {
-      this.$router.push(url);
-    }
-  }
 }
 </script>
 
 <style lang="scss">
 #font-small{
   font-size: 15px;
+}
+.bm--card-equal-height {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.bm--card-equal-height .card-footer {
+   margin-top: auto;
 }
 // .has-padding{
 //   padding: 10px;

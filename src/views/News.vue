@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="block">
-      <div class="columns is-centered">
+      <div class="columns is-centered is-multiline">
         <div class="column is-6">
           <article class="message is-primary">
             <div class="message-header">

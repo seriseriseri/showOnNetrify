@@ -1,6 +1,6 @@
 <template>
 <div class="register" id="register">
-    <div class="columns is-tablet">
+    <div class="columns">
         <div class="column is-three-fifths is-offset-one-fifth">
             <GoBackToPage/>
             <h1 class="title is-3 has-text-centered">アカウント登録</h1>
