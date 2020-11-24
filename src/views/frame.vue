@@ -68,7 +68,10 @@
           </template>
           <template slot="start">
               <b-navbar-item>
-                <router-link :to="{path: '/'}" exact><a><strong>TOP</strong></a></router-link>
+                <router-link :to="{path: '/'}" exact><a><strong>事業</strong></a></router-link>
+              </b-navbar-item>
+              <b-navbar-item>
+                <router-link :to="{path: '/tiles1'}" exact><a><strong>TOP</strong></a></router-link>
               </b-navbar-item>
               <b-navbar-item>
                 <router-link :to="{path: '/news'}" exact><a><strong>お知らせ</strong></a></router-link>

@@ -10,7 +10,19 @@ const routes = [
     children: [
       {
         path: '/',
-        component: () => import('../views/Top.vue')
+        component: () => import('../views/Projects.vue')
+      },
+      {
+        path: '/tiles1',
+        component: () => import('../views/Tiles1.vue')
+      },
+      {
+        path: '/tiles2',
+        component: () => import('../views/Tiles2.vue')
+      },
+      {
+        path: '/search',
+        component: () => import('../views/Search.vue')
       },
       {
         path: '/news',
@@ -23,6 +35,14 @@ const routes = [
       {
         path: '/reservation2',
         component: () => import('../views/Reservation2.vue')
+      },
+      {
+        path: '/confirm',
+        component: () => import('../views/Confirm.vue')
+      },
+      {
+        path: '/confirm2',
+        component: () => import('../views/Confirm2.vue')
       },
       {
         path: '/register',

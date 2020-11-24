@@ -21,8 +21,10 @@
         </p>
         <p class="block"></p>
         <div class="buttons">
-          <button class="button is-primary is-medium is-fullwidth" @click="doNavigate('/login')">予約画面に進む</button>
+          <!-- <button class="button is-primary is-medium is-fullwidth" @click="doNavigate('/login')">予約画面に進む</button> -->
+          <button class="button is-primary is-medium is-fullwidth" @click="doNavigate('/search')">予約画面に進む</button>
           <button class="button is-primary is-medium is-fullwidth" @click="doNavigate('/reservationSearch')">空き状況を確認する</button>
+          <button class="button is-primary is-medium is-fullwidth" @click="doNavigate('#')">予約内容の確認をする</button>
         </div>
  
       </div>
@@ -42,7 +44,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import '@/assets/styles/_koyamastyle.scss'; //カスタムテーマ
 // .has-padding{
 //   padding: 10px;
 // }

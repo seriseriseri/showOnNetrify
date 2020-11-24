@@ -20,6 +20,7 @@
           <div class="box">
               <div class="buttons is-centered">
                 <button class="button is-light" @click="doBack">{{ $t('sample3.back') }}</button>
+                <button class="button is-primary" @click="doNavigate('/confirm')">{{ $t('sample2.next') }}</button>
               </div>
             </div>
         </div>

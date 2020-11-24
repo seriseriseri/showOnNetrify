@@ -1,7 +1,7 @@
 <template>
-  <div class="home">
-    <div class="block"></div>
-    <div class="columns  is-multiline">
+  <div class="tiles1">
+    <h1 class="is-size-3 has-text-weight-semibold has-text-centered">事業１</h1>
+    <div class="columns  is-multiline is-centered">
       <div class="column is-3" id="column1">
         <div class="card has-text-centered bm--card-equal-height">
           <div class="card-content">
@@ -24,18 +24,17 @@
         <div class="card has-text-centered bm--card-equal-height">
           <div class="card-content">
             <div class="card-title block">
-              <h1 class="title is-4">けんしん</h1>
+              <h1 class="title is-4">検診予約</h1>
             </div>
             <div class="card-icon has-text-primary block">
               <b-icon pack="fas" icon="stethoscope" size="fa-3x"></b-icon>
             </div>
             <div class="card-text block">
-              <p>けんしんの予約・空き状況の確認をします。</p>
+              <p>検診の予約・空き状況の確認をします。</p>
             </div>
           </div>
           <footer class="card-footer">
-            <a href="/Reservation" class="card-footer-item">予約をする</a>
-            <a href="#" class="card-footer-item">空き状況を確認する</a>
+            <router-link :to="{path: '/Reservation'}" exact class="card-footer-item"><a>進む</a></router-link>
             <!-- <p class="card-footer-item">
               <span>
                 <a href="/Reservation">予約をする</a>
@@ -70,60 +69,6 @@
                 <a href="/reservation2">予約をする</a>
               </span>
             </p> -->
-          </footer>
-        </div>
-      </div>
-      <div class="column is-3" id="column3">
-        <div class="card has-text-centered bm--card-equal-height">
-          <div class="card-content">
-            <div class="card-title block">
-              <h1 class="title is-4">予防接種</h1>
-            </div>
-            <div class="card-icon has-text-primary block">
-              <b-icon pack="fas" icon="syringe" size="fa-3x"></b-icon>
-            </div>
-            <div class="card-text block">
-              <p>予防接種の予約をします。</p>
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="#" class="card-footer-item">予約をする</a>
-          </footer>
-        </div>
-      </div>
-      <div class="column is-3" id="column3">
-        <div class="card has-text-centered bm--card-equal-height">
-          <div class="card-content">
-            <div class="card-title block">
-              <h1 class="title is-4">サンプル</h1>
-            </div>
-            <div class="card-icon has-text-primary block">
-              <b-icon pack="fas" icon="comment" size="fa-3x"></b-icon>
-            </div>
-            <div class="card-text block">
-              <p>サンプルカードです。</p>
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="#" class="card-footer-item">予約をする</a>
-          </footer>
-        </div>
-      </div>
-      <div class="column is-3" id="column3">
-        <div class="card has-text-centered bm--card-equal-height">
-          <div class="card-content">
-            <div class="card-title block">
-              <h1 class="title is-4">サンプル２</h1>
-            </div>
-            <div class="card-icon has-text-primary block">
-              <b-icon pack="fas" icon="comment" size="fa-3x"></b-icon>
-            </div>
-            <div class="card-text block">
-              <p>サンプルカードです。</p>
-            </div>
-          </div>
-          <footer class="card-footer">
-            <a href="#" class="card-footer-item">予約をする</a>
           </footer>
         </div>
       </div>
