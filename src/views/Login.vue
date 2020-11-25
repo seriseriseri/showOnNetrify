@@ -22,8 +22,9 @@
           <div class="box">
             <div class="has-text-centered">{{ $t("sample1.confirmCreateAccount") }}</div>
             <div class="buttons">
-              <b-button type="is-primary is-medium" expanded @click="doNavigate('/register')">{{ $t("sample1.gotoAccountCreate") }}</b-button>
-              <b-button type="is-primary is-medium" expanded @click="doNavigate('/personalInfo')">{{ $t("sample1.signin") }}</b-button>
+              <b-button type="is-primary is-medium" expanded @click="doNavigate('/register')">register a new account</b-button>
+              <b-button type="is-primary is-medium" expanded @click="doNavigate('/personalInfo')">sign in</b-button>
+              <b-button type="is-primary is-medium" expanded @click="doNavigate('/sample1'),test('BBB')">test button</b-button>
             </div>
           </div>
         </section>
@@ -54,6 +55,9 @@ export default {
   methods: {
     doNavigate: function (url) {
       this.$router.push(url);
+    },
+    test: function(text) {
+      this.$store.commit('changeTextMessage', text);
     }
   }
 }

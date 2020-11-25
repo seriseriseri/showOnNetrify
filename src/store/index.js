@@ -5,8 +5,12 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    textMessage: 'not changed'
   },
   mutations: {
+    changeTextMessage(state, text) {
+      state.textMessage = text;
+    }
   },
   actions: {
   },
